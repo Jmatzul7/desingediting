@@ -1,0 +1,832 @@
+@font-face{
+    font-family: "Pacifico";
+    src:url(../font/Pacifico-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Montserrat";
+    src:url(../font/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Montserrat";
+    font-weight: bold;
+    src:url(../font/Montserrat-Bold.ttf);
+
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+
+
+/*-----------------------  Modal-------------------------------*/ 
+
+
+.modal{
+ width: 100%;
+ min-height: 100vh;
+ background: rgba(0, 0, 0, .9);
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 100000;
+ display: none;
+}
+
+.modal--open{
+    display: block;
+}
+
+.modal__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal__img{
+    width: 50%;
+    
+}
+
+.modal__boton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #0008a0;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+}
+.goog-te-banner-frame{
+    display: none !important;
+
+    
+}
+
+/*-----------------------  Modal-------------------------------*/ 
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    top: 0;
+
+}
+
+.vm{
+    color: black;
+    background: transparent;
+}
+
+.btn0{
+    text-decoration: none;
+    background-color: transparent;
+    display: inline-block;
+    font-weight: 200;
+    border-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+
+}
+
+
+/*-----------Estilos Base--------*/
+
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.column{
+    width: 100%;
+
+}
+
+/*-----------Estilos header--------*/
+
+.main-header{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    font-size: 1.7em;
+    color: #0008a0;
+    padding: 10px;
+    font-family: 'Pacifico';
+    font-weight: 100;
+}
+
+.main-header__contactInfo__phone{
+    background: #0008a0;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.main-header__contactInfo__address{
+    margin: 0;
+    padding: 10px;
+}
+
+.main-header [class*="icon-"]::before{
+position: relative;
+top: 2px;
+right: 5px;
+}
+
+
+/*-----------Estilos Menu--------*/
+
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 3000;
+    padding: 15px;
+    
+    
+}
+
+.icon-menu{
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-top: 1px;
+
+}
+
+
+
+
+
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.social-icon1 [class*="icon-"]{
+   
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.23mm;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+    
+
+}
+
+.social-icon [class*="icon-"]{
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.23mm;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+}
+
+.social-icon [class*="icon-1"]{
+color: white;
+background: transparent;
+margin: 0;
+}
+
+.social-icon__link{
+    text-decoration: none;
+   
+}
+
+.menu{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+
+}
+
+.menu__link{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu__link:hover{
+    background: #0008a0;
+}
+
+.menu__link--select{
+    background: #0008a0;
+}
+
+.mostrar{
+    height: 160px;
+}
+
+/*-----------Estilos banner--------*/
+
+.banner{
+    margin-top: -95px;
+    position: relative;
+}
+
+.banner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    z-index: 1000;
+    top: 0;
+}
+
+.banner__img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+
+}
+
+.banner__content{
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*-----------Estilos--------*/
+
+.group--color .container{
+    background: #0008a0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main__title{
+    margin: 15px 0;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+
+.main__txt{
+    padding: 1px;
+}
+
+.column__title{
+    font-size: 1.3em;
+}
+
+.main__about__description .column:nth-child(2){
+    padding: 10px;
+}
+
+.btn {
+    text-decoration: none;
+
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .btn1 {
+    text-decoration: none;
+    background-color: #0008a0;
+    color: white;
+    display: inline-block;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
+}
+  .btn2 {
+    text-decoration: none;
+    background-color: #0008a0;
+    color: white;
+    display: inline-block;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  
+ 
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn {
+      transition: none;
+    }
+  }
+  
+  .btn:hover {
+    color: #212529;
+    text-decoration: none;
+  }
+  
+  .btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .btn.disabled, .btn:disabled {
+    opacity: 0.65;
+  }
+  
+  a.btn.disabled,
+  fieldset:disabled a.btn {
+    pointer-events: none;
+  }
+
+.btn-outline-primary {
+    color: #0008a0;
+    border-color: #0008a0;
+  }
+  
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #0008a0;
+    border-color: #0008a0;
+  }
+  
+  .btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  
+  .btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: #0008a0;
+    background-color: transparent;
+  }
+  
+  .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0008a0;
+    border-color: #0008a0;
+  }
+  
+  .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+.group__title{
+font-family: 'Pacifico', cursive;
+text-align: center;
+font-weight: 100;
+
+font-size: 1.8em;
+margin: 30px;
+}
+
+.group__title__nav{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-weight: 100;
+    color: white;
+    font-size: 1.8em;
+    margin: 1px;
+    }
+    
+.edition .column{
+margin-bottom: 30px;
+text-align: center;
+}
+
+.edition__img{
+    margin: auto;
+    max-width: 350px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+   
+ }
+
+ .edition__img:hover{
+
+    transform: scale(4.02);
+ }
+
+ .edition__img1{
+    margin: auto;
+    max-width: 350px;
+    border-radius: 50%;
+   
+ }
+ .edition__img2{
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.edition__img2:hover{
+
+    transform: scale(1.02);
+ }
+
+ .edition__title{
+font-size: 1.3em;
+padding-top: 10px;
+padding-bottom: 20px;
+text-align: center;
+ }
+ 
+.edition__price{
+font-size: 1.5em;
+color: #0008a0;
+font-weight: bold;
+text-align: center;
+}
+
+/*-----------Estilos footer-------*/
+
+.main-footer{
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+
+.copy{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main-footer[class*="icon-"] {
+color: white;
+text-decoration: none;
+}
+
+.main-footer[class*="icon-"]::before{
+    position: relative;
+    top: 3px;
+    right: 6px;
+    
+}
+
+.social{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat';
+    margin: 1px, 1px;
+    
+}
+
+
+/*-----------Estilos r-------*/
+@media screen and (min-width:400px){
+    .menu{
+        margin-top: 12px;
+    
+    }
+}
+@media screen and (min-width:480px){
+    .logo{
+        color: white;
+
+    }
+    
+   
+    .main-header__contactInfo{
+        text-align: right;
+    }
+
+    .social-icon{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-header__contactInfo__phone{
+        background: none;
+    }
+
+    .main-header__contactInfo__address{
+        color: white;
+    }
+
+    .main-nav{
+        background: rgba(0,0,0,.8);
+    }
+
+    .banner{
+        margin-top: -185px;
+        z-index: -1000;
+    }
+
+    .banner__content{
+        font-size: 2em;
+    }
+
+    .main{
+        padding-bottom: 15px;
+    }
+
+    .main-footer .container--flex{
+        align-items: flex-start;
+    }
+    .column--50{
+        width: 49%;
+    }
+
+    .column--50--25{
+        width: 49%;
+    }
+    .column--33{
+        width: 33%;
+        text-align:left;
+    }
+
+    .main__about__description .column:nth-child(2){
+        padding-left: 20px;
+        font-size: .9em;
+
+    }
+    
+    .main__about__description .btn{
+        margin: 0;
+    }
+
+    .edition .column{
+        border: 5px solid #ddd; 
+        padding: 5px;
+    }
+
+    .edition__img{
+        width: 150px;
+        object-fit: cover;
+    }
+
+    .edition__img2{
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width:768px){
+
+.main__title{
+    font-size: 2.2em;
+}
+
+.main__about__description .column--50:nth-child(2){
+    font-size: 1em;
+}
+.main__about__description .column--50:nth-child(2).txt{
+    line-height: 30px;
+}
+
+.icon-menu{
+    display: none;
+}
+
+.group__title__nav{
+    display: none;
+}
+
+.menu{
+    position: static;
+    display: flex;
+    height: auto;
+    width: auto;
+
+}
+
+.menu__link{
+    padding: 20px;
+}
+.column--50--25{
+    width: 24%;
+}
+.column__title{
+    font-size: 1em;
+}
+
+.group__title{
+    font-size: 2.2em;
+}
+
+
+.edition__img{
+    margin: auto;
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.edition__img2{
+    margin: auto;
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+}
+
+@media screen and (min-width:1024px){
+    .container{
+        width: 1000px;
+    }
+    .logo{
+        font-size: 2em;
+        padding: 0;
+    }
+    .main-header__contactInfo__phone, .main-header__contactInfo__address{
+        padding-right: 0;
+        font-size: 1.15em;
+    }
+
+    .main-nav{
+        padding: 0;
+    }
+
+    .banner__img{
+        height: 650px;
+    }
+
+    .banner__content{
+        font-size: 2.5em;
+    }
+
+   
+
+    .group--color{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .main__title{
+        font-size: 2.5em;
+    }
+
+    .main__about__description .column--50:nth-child(2).txt{
+        line-height: 50px;
+    }
+
+    .edition__title{
+        font-size: 1.4em;
+    }
+
+    .edition__price{
+        font-size: 2em;
+    }
+
+    .main-footer{
+        padding: 30px;
+        padding-bottom: 30px;
+    }
+
+    .btn1 {
+        text-decoration: none;
+        background-color: #0008a0;
+        color: white;
+        display: inline-block;
+        font-weight: 200;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        
+    }
+
+
+}
+
+@media screen and (min-width:1600px){
+    .container{
+        width: 1400px;
+    }
+
+    .banner__img{
+        height: 400px;
+    }
+    .main__about__description .column--50:nth-child(1).img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .edition__img{
+        width: auto;
+        height: 300px;
+    }
+
+    .edition__img2{
+        margin: auto;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+
+
