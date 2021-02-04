@@ -1,5 +1,0 @@
-commit 53d95d1a3e37e4d56b107202fe8ccc93604387fd
-Author: Jhonny <jmatzul7@gmail.com>
-Date:   Thu Feb 4 11:16:25 2021 -0600
-
-    Inicio del proyecto
