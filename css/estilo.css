@@ -497,7 +497,7 @@ text-align: center;
 
  .edition__img:hover{
 
-    transform: scale(1.02);
+    transform: scale(.03);
  }
 
  .edition__img1{
